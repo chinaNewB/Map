@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <Button
+            android:id="@+id/foods"
+            style="@style/buttonStyle"
+            android:text="享美食"
+            android:layout_alignParentLeft="true"/>
+        <Button
+            android:id="@+id/attractions"
+            style="@style/buttonStyle"
+            android:layout_toRightOf="@+id/foods"
+            android:layout_marginLeft="-17dp"
+            android:text="逛景点"/>
+        <Button
+            android:id="@+id/hotels"
+            style="@style/buttonStyle"
+            android:layout_toRightOf="@+id/attractions"
+            android:layout_marginLeft="-18dp"
+            android:text="住酒店"/>
+        <Button
+            android:id="@+id/banks"
+            style="@style/buttonStyle"
+            android:layout_toRightOf="@+id/hotels"
+            android:layout_marginLeft="-18dp"
+            android:text="找银行"/>
+        <Button
+            android:id="@+id/shoppings"
+            style="@style/buttonStyle"
+            android:text="爱购物"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:divider="#F9F9F9"
+        android:dividerHeight="20dp"/>
+
+</LinearLayout>
